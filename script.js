@@ -5,7 +5,7 @@ let globalIndex = 0,
 
 const activate = (image, x, y) => {
   // Apply offsets
-  const offsetY = -200;
+  const offsetY = -300;
 
   image.style.left = `${x}px`;
   image.style.top = `${y + offsetY}px`;
