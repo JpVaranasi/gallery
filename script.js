@@ -4,8 +4,11 @@ let globalIndex = 0,
     last = { x: 0, y: 0 };
 
 const activate = (image, x, y) => {
+  // Apply offsets
+  const offsetY = -200;
+
   image.style.left = `${x}px`;
-  image.style.top = `${y}px`;
+  image.style.top = `${y + offsetY}px`;
   image.style.zIndex = globalIndex;
 
   image.dataset.status = "active";
